@@ -1,51 +1,45 @@
 import React, { useState } from "react";
 import Card from "./Card";
 
-export default function ProductList() {
-const products = [
-  {
-    img: "/image/1.png",
-    brand: "브랜드A",
-    desc: "편안하고 착용감이 좋은 신발",
-    price: "35000원",
-  },
-  {
-    img: "https://i.pinimg.com/564x/0a/22/46/0a2246d875ea9843de836041710e4914.jpg",
-    brand: "브랜드A",
-    desc: "편안하고 착용감이 좋은 신발",
-    price: "35000원",
-  },
-  {
-    img: "https://i.pinimg.com/564x/0a/22/46/0a2246d875ea9843de836041710e4914.jpg",
-    brand: "브랜드A",
-    desc: "편안하고 착용감이 좋은 신발",
-    price: "35000원",
-  },
-  {
-    img: "https://i.pinimg.com/564x/0a/22/46/0a2246d875ea9843de836041710e4914.jpg",
-    brand: "브랜드A",
-    desc: "편안하고 착용감이 좋은 신발",
-    price: "35000원",
-  },
-  {
-    img: "https://i.pinimg.com/564x/0a/22/46/0a2246d875ea9843de836041710e4914.jpg",
-    brand: "브랜드A",
-    desc: "편안하고 착용감이 좋은 신발",
-    price: "35000원",
-  },
-  {
-    img: "https://i.pinimg.com/564x/0a/22/46/0a2246d875ea9843de836041710e4914.jpg",
-    brand: "브랜드A",
-    desc: "편안하고 착용감이 좋은 신발",
-    price: "35000원",
-  },
-  {
-    img: "https://i.pinimg.com/564x/0a/22/46/0a2246d875ea9843de836041710e4914.jpg",
-    brand: "브랜드A",
-    desc: "편안하고 착용감이 좋은 신발",
-    price: "35000원",
-  },
-];
+export default function ProductList({ onCartCountChange }) {
+  const products = [
+    {
+      img: "/image/1.png",
+      brand: "브랜드A",
+      desc: "편안하고 착용감이 좋은 신발",
+      price: "35000원",
+    },
+    {
+      img: "/image/2.png",
+      brand: "브랜드A",
+      desc: "편안하고 착용감이 좋은 신발",
+      price: "35000원",
+    },
+    {
+      img: "/image/3.png",
+      brand: "브랜드A",
+      desc: "편안하고 착용감이 좋은 신발",
+      price: "35000원",
+    },
+    {
+      img: "/image/4.png",
+      brand: "브랜드A",
+      desc: "편안하고 착용감이 좋은 신발",
+      price: "35000원",
+    },
+    {
+      img: "/image/5.png",
+      brand: "브랜드A",
+      desc: "편안하고 착용감이 좋은 신발",
+      price: "35000원",
+    },
+    {
+      img: "/image/6.png",
+      brand: "브랜드A",
+      desc: "편안하고 착용감이 좋은 신발",
+      price: "35000원",
+    },
+  ];
 
   return (
     <div style={{ width: "429px" }}>
@@ -63,6 +57,7 @@ const products = [
             desc={products.desc}
             price={products.price}
             img={products.img}
+            onCartCountChange={onCartCountChange}
           ></Card>
         ))}
       </ul>

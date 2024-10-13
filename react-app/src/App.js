@@ -10,7 +10,7 @@ function App() {
   return (
     <div className=" pt-10 m-auto" style={{ width: "429px" }}>
       <Header cartCount={cartCount}></Header>
-      <ProductList/>
+      <ProductList onCartCountChange={setCartCount}/>
     </div>
   );
 }
